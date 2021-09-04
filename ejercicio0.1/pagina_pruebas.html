@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina</title>
+    <style> 
+    
+    /* p:nth-child(even) {
+        color: rgb(206, 44, 44);
+    } */
+
+    /* p:first-child{
+        color:blue;
+    }
+     */
+
+    #principal{
+        width: 500px;
+        /* background-color :aqua; */
+        text-align: center;
+        margin: 15px auto;
+        padding: 15px;
+        border: 3px solid rgb(129, 29, 121);
+        border-radius: 10px 20px 30px 50px;
+        background: -moz-linear-gradient(top, blue, aquamarine); /*mozilla vista correcta */
+        background: -webkit-radial-gradient(center, ellipse, blue, aquamarine); /*chrome vista correcta */ 
+        /* outline: 2px dashed red;
+        outline-offset:15px; * bordes marcados por puntos */
+        /* -webkit-transform:scale(1); escalar el elemento */
+        /* -webkit-transform:rotate(5deg)  rotar elementos segun los grados */
+        /* -webkit-transform: skew(50deg);  efecto aplanar */
+        /* -webkit-transition: -webkit-transform 1s ease 0.3s; efecto ease transicion lenta cuando se pasa por el elemento*/
+
+
+    }
+
+    /* hace un accion cuando se para el mouse sobre el, en este caso rotar*/
+    #principal:hover{
+
+        -webkit-transform:rotate(5deg);  /* rotar elementos segun los grados */
+
+    }
+
+    @font-face{
+        font-family:"mifuente";
+        src:url("BRADHITC.TTF");
+        
+    }
+
+
+
+    #principal{
+
+        font:bold 36px 'mifuente';
+        box-shadow: green 12px 7px; /* sombra caja*/
+        text-shadow: rgb(241, 247, 241) 3px 3px 1px; /*sombra texto */
+        color:rgba(0, 0,0,0.9) /* transparencia */
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <p name="miselementos"> Hola </p>
+    <p name="miselementos"> Adios </p>
+    <p> Febrero </p>
+
+    <ol>
+
+        <li>Frutas</li>
+        <li><p>manzana</p>
+        <p>Limon</p>
+        <p>Pera</p>
+        <p>Melon</p>
+
+    </ol> -->
+    
+    <header id="principal">
+
+        <span id="titulos">Estilos css3</span>
+
+    </header>
+</body>
+</html>

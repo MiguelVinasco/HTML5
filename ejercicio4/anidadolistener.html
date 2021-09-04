@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <p><img src="/ejercicio4/imagenes/3.jpg"></p>
+    
+    <script>
+
+        function eventos(){
+
+            let parrafo = document.getElementsByTagName("p")[0];
+            let img = document.getElementsByTagName("img")[0];
+
+            //se usa para dar prioridad a un evento, con el ultimo parametro de add listener
+            parrafo.addEventListener("click", avisoParrafo, true);
+            img.addEventListener("click", avisoImagen, false)
+        }
+
+        
+        function avisoParrafo(){
+
+            alert("aviso del parrafo");
+        }
+
+        function avisoImagen(){
+            alert("aviso de imagen");
+        }
+
+        
+        window.addEventListener("load", eventos, false);
+
+    </script>
+</body>
+
+</html>

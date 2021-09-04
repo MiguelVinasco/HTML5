@@ -1,0 +1,92 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+/* fin reset */
+
+body {
+    
+    font-size:62.5%
+
+}
+
+
+h1{
+    font:normal 2.4em Verdana, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, rgb(90, 236, 77) , rgb(83, 94, 240));
+    width: 35%;
+    border-radius: 8px;
+    margin: 15px auto;
+    text-align: center;
+    padding:15px;
+    color: white;
+    box-shadow:rgb(80, 80, 245) 5px 5px 10px;
+    text-shadow:white 2px 2px 3px;
+
+}
+
+
+h2{
+
+    font:bold 1.7em Verdana, Geneva, sans-serif;
+    margin:0;
+    padding: 5px 0px 5px 0px;
+    color: black;
+
+}
+
+section{
+
+    width: 90%;
+    border-top: 1px dashed rgb(146, 146, 146);
+    margin:15px auto;
+}
+
+figure{
+
+    float:left
+}
+
+figure img{
+
+    padding: 4px;
+    background: gray;
+    border-radius: 18px;
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    box-shadow: gray 5px 5px 10px;
+}
+
+figure img:hover{
+
+    -webkit-transform: scale(1.2);
+
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer{
+    clear: both;
+    padding-top: 100px;
+
+}
+
+footer p{
+
+    font: 1.5em Georgia, Times, serif;
+    color: gray;
+    margin: 10px 10px;
+}

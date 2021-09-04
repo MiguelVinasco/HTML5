@@ -1,0 +1,14 @@
+
+
+
+.video{
+
+    width: 520px;
+    margin: 20px auto;
+    background: orange;
+    padding: 10px;
+    border: 2px solid rgb(158, 112, 27);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    -moz-border-radius: 10px;
+}
