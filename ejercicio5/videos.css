@@ -12,3 +12,32 @@
             border-radius: 10px;
     -moz-border-radius: 10px;
 }
+
+
+.barcontrols{
+
+    margin:10px 0px;
+}
+
+.botones{
+
+    float:left;
+    width: 100px;
+    height: 20px;
+}
+
+.barra{
+    background: white;
+    width:450;
+    height: 15px;
+    border: 1px solid gray;
+    padding: 3px;
+    margin-left: 50px;
+}
+
+.barprogres{
+    position:absolute;
+    width:0px;
+    height: 15;
+    background: rgba(0.0.150,2);
+}

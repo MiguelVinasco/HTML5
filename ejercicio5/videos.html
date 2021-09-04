@@ -17,15 +17,32 @@ controls: muestra las opciones de reproduccion , sonido etc -->
 </head>
 
 <body>
-
+    
     <section class="video">
-
-        <video class="mivideo" width="520" controls muted loop poster="/ejercicio5/videos/VITAMINA C  X 30 REF 513313.jpg">
+        
+        <video class="mivideo" width="520"  muted loop poster="/ejercicio5/videos/VITAMINA C  X 30 REF 513313.jpg">
             <source src="/ejercicio5/videos/VIDEO VITAMINA C.mp4">
             <source src="/ejercicio5/videos/VIDEO VITAMINA C.ogg">
         </video>
 
+        <nav class="barcontrols">
+            
+            <div class="botones">
+                
+                <button type="button" class="reproducir">play</button>
+                
+            </div>
+            
+            <div class="barra">
+                
+                <div class="barprogres"></div>
+            </div>
+            
+            
+            
+        </nav>
+        
     </section>
-    
+    <script type="text/javascript" src="/ejercicio5/interaccionv.js"></script>
 </body>
 </html>
