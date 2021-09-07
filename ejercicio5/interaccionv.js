@@ -1,6 +1,8 @@
 
 
-let mivideo, reproducir, barra, barprogres
+var mivideo, reproducir, barra, barprogres, maximo;
+
+maximo = 450;
 
 
 
@@ -12,9 +14,9 @@ function comenzar(){
     barprogres = document.getElementsByClassName("barprogres");
 
 
-    reproducir.addEventListener("click", empezar,false);
+    reproducir.addEventListener("click", empezar, false);
 
-    barprogres.addEventListener("click", cargando, false);
+    barra.addEventListener("click", cargando, false);
 }
 
 
@@ -33,18 +35,41 @@ function comenzar(){
 // pause()
 function empezar(){
 
-    if (mivideo.paused == false && mivideo.ended==false){
+    if((mivideo.paused ==false) && (mivideo.ended==false)){ 
+        mivideo.pause(); 
+        reproducir.innerHTML ="Play";
+    } 
+    else 
+    { 
+        mivideo.play(); 
+        reproducir.innerHTML ="Pause";
 
-        mivideo.paused();
-        
-        
-    }else{
-        
-        mivideo.play();
-        reproducir.innerHTML ="Pausar"
-    }
-
+        bucle = setInterval(estado, 30);
+    } 
 }
 
+function estado(){
+
+    if (mivideo.ended == false) {
+        
+        let total = parseInt(mivideo.currentTime*maximo / mivideo.duration);
+
+        barprogres.style.width = total+"px";
+    }
+}
+
+function cargando(posicion){
+
+    if ((mivideo.paused == false) && (mivideo.ended == false)) {
+
+        let ratonx = posicion.pageX - barra.offset().left;
+
+        let nuevoTiempo = ratonx * mivideo.duration/maximo;
+
+        mivideo.currentTime = nuevoTiempo;
+
+        barprogres.style.width = ratonx+"px";
+    }
+}
 
 window.addEventListener("load",comenzar,false);
